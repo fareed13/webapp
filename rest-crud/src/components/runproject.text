@@ -1,0 +1,12 @@
+server link to create database from json-server
+https://www.npmjs.com/package/json-server
+run two comand 
+1)npm install -g json-server
+2)json-server --watch db.json
+
+always run to activate db lik 
+as we build npm run server same run for server json-server --watch db.json
+
+*)know vue cli install ho
+*)node install ho 
+*)axios package install ho 

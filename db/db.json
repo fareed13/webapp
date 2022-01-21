@@ -1,0 +1,126 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "fareed",
+      "email": "fareed@gmail.com",
+      "password": "fareed123"
+    },
+    {
+      "id": "2",
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "test123"
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail",
+      "password": "12345",
+      "id": "3Ei-eTs"
+    },
+    {
+      "name": "bilal",
+      "email": "bilal@gmail.com",
+      "password": "12345",
+      "id": "Tbo3bFC"
+    },
+    {
+      "name": "bilal",
+      "email": "bilal123@gmail.com",
+      "password": "5700",
+      "id": "-PyYOvt"
+    },
+    {
+      "name": "bilal",
+      "email": "bilal123@gmail.com",
+      "password": "5700",
+      "id": "cTA3QmP"
+    },
+    {
+      "name": "asd",
+      "email": "asdg",
+      "password": "123",
+      "id": "cEhVob0"
+    },
+    {
+      "name": "aa",
+      "email": "abc",
+      "password": "1234",
+      "id": "6fAG5FC"
+    },
+    {
+      "name": "aa",
+      "email": "abc",
+      "password": "1234",
+      "id": "YoTHDWF"
+    },
+    {
+      "name": "aa",
+      "email": "abcd",
+      "password": "567890",
+      "id": "KEJXR3O"
+    },
+    {
+      "name": "FareedAhmed",
+      "email": "Fareed@gmail.com",
+      "password": "Relax5700",
+      "id": "SOVBz10"
+    },
+    {
+      "name": "ABC",
+      "email": "ABC@gmail.com",
+      "password": "FAREEDAHMED",
+      "id": "7BZLBrN"
+    },
+    {
+      "name": "test",
+      "email": "test",
+      "password": "test123",
+      "id": "5myr9Qg"
+    },
+    {
+      "name": "test",
+      "email": "test",
+      "password": "test",
+      "id": "Sq09gVp"
+    },
+    {
+      "name": "fareed",
+      "email": "fareed",
+      "password": "fareed",
+      "id": "Pravg4Z"
+    },
+    {
+      "name": "hamza",
+      "email": "hamza",
+      "password": "hamza123",
+      "id": "F5v4YWR"
+    },
+    {
+      "name": "QA",
+      "email": "qa",
+      "password": "qa",
+      "id": "go_KxeQ"
+    },
+    {
+      "name": "hello",
+      "email": "qq",
+      "password": "qq",
+      "id": "x17KBhj"
+    }
+  ],
+  "resturant": [
+    {
+      "name": "Burger king International",
+      "address": "main boulevard",
+      "contact": "11-11-11-33",
+      "id": "ktQPcHJ"
+    },
+    {
+      "name": "qa test 11",
+      "address": "qa road 22",
+      "contact": "123456789",
+      "id": "4lmQMlP"
+    }
+  ]
+}
