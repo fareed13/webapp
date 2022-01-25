@@ -42,8 +42,9 @@
 </template>
 
 <script>
-import axios from 'axios'
+import  exampleMixin from "../mixins/exampleMixin"
   export default {
+    mixins:[exampleMixin],
     name: 'SignUp',
 
     data () {
@@ -60,31 +61,7 @@ import axios from 'axios'
       logIn(){
         this.$router.push({name:'Login'})
       },
-      async signUp(){
-        let result = await axios.post("http://localhost:3000/user",{
-          name:this.name,
-          email:this.email,
-          password:this.password
-        });
-        
-        console.warn("result");
-
-        if(result.status==201){
-          alert("signin done");
-   
-          localStorage.setItem("user-info",JSON.stringify(result.data))
-
-          // debuging code
-
-          // const abc = this
-          // console.log(abc)
-          // console.log(this)
-          // debugger
-
-          this.$router.push({name:'Home'})
-        }
-        // console.warn("signup something",this.name,this.email,this.password);
-      }
+      
     },
     mounted(){
       let user = localStorage.getItem('user-info');

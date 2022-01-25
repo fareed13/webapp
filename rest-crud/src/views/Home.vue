@@ -35,7 +35,7 @@
                <v-icon
                 small
                 class="mr-2"
-                @click="editResturant(item.id)">mdi-pencil</v-icon>
+                @click="editResturanttable(item.id)">mdi-pencil</v-icon>
                 
                 <v-icon
                 small
@@ -54,9 +54,11 @@
 </template>
 
 <script>
-import axios from 'axios'
+import  exampleMixin from "../mixins/exampleMixin"
 import Header from "../components/Header.vue"
+
   export default {
+    mixins:[exampleMixin],
     name: 'Home',
     components:{
       Header
@@ -82,34 +84,9 @@ import Header from "../components/Header.vue"
     },
     
     methods:{
-      editResturant(itemid){
-        this.$router.push({name:'Updaterest', params: { id: itemid }})
-        
-      },
-      async deleteResturant(itemid){
-        let result =await axios.delete('http://localhost:3000/resturant/'+itemid);
-        console.warn(result)
-        if(result.status==200){
-         this.loadData()
-        }
-      },
-
-      async loadData(){
-        let user = localStorage.getItem('user-info');
-       this.name= JSON.parse(user).name;
-      if(!user)
-      {
-        this.$router.push({name:'SignUp'})
-      }
-
-      // for resturant get
-
-      let result= await axios.get("http://localhost:3000/resturant")
-      console.log(result)
-      this.resturant = result.data;
-      }
+      
     },
-    async mounted(){
+   async mounted(){
       this.loadData();
     }
     

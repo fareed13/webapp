@@ -25,7 +25,7 @@
              width="50%" 
              label="Enter password"></v-text-field>
              
-             <div class="d-flex justify-space-around">
+             <div class="d-flex justify-space-around pb-1">
               <v-btn x-large @click="signUp">sigup</v-btn>
 
               <v-btn x-large @click="logIn">login</v-btn>
@@ -38,8 +38,9 @@
 </template>
 
 <script>
-import axios from 'axios'
+import  exampleMixin from "../mixins/exampleMixin"
   export default {
+    mixins:[exampleMixin],
     name: 'SignUp',
 
     data () {
@@ -56,20 +57,7 @@ import axios from 'axios'
       signUp(){
         this.$router.push({name:'SignUp'})
       },
-      async logIn(){
-
-         let result = await axios.get(
-           `http://localhost:3000/user?email=${this.email}&password=${this.password}`
-         )
-         console.log(result);
-
-         if(result.status==200 && result.data.length>0){
-          alert("login done");
-   
-          localStorage.setItem("user-info",JSON.stringify(result.data[0]))
-          this.$router.push({name:'Home'})
-        }
-      }
+      
     },
     mounted(){
       let user = localStorage.getItem('user-info');
@@ -97,5 +85,6 @@ import axios from 'axios'
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 22%;
 }
 </style>

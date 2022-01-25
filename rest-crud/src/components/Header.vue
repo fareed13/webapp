@@ -30,7 +30,8 @@
       logOUt(){
         
         localStorage.clear();
-        this.$router.push({name:'LogIn'})
+        // this.$router.push({name:'LogIn'})
+        this.$router.push("/LogIn").catch(()=>{});
       }
     },
     mounted(){
