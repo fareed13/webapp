@@ -36,6 +36,11 @@ const routes = [
     component: () => import('../views/Formresturant.vue')
   },
   {
+    path: 'locationApitask',
+    name: 'locationApitask',
+    component: () => import('../views/locationApitask.vue')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting

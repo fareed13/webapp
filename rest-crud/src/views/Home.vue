@@ -45,6 +45,8 @@
 
              </v-data-table>
              
+             <p>test api location task</p>
+             <locationApitask />
           </v-card>
       </v-col>
     </v-row>
@@ -56,12 +58,14 @@
 <script>
 import  exampleMixin from "../mixins/exampleMixin"
 import Header from "../components/Header.vue"
+import locationApitask from "./locationApitask.vue"
 
   export default {
     mixins:[exampleMixin],
     name: 'Home',
     components:{
-      Header
+      Header,
+      locationApitask
     },
 
     data () {
